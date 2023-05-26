@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500;700&display=swap');
+
+body {
+    font-family: "Cormorant Garamond";
+    margin: 0 auto;
+    width: 1024px;
+    background: #ecedef;
+}
+
+p {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 17px;
+}
+
+h3 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border-bottom: 1px solid darkgray;
+    padding-bottom: 5px;
+}
+
+.flex,
+section {
+    display: flex;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+#red-title {
+    color: #b3aba9;
+    font-style: normal;
+    margin-bottom: 2px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+}
+
+.title>div {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 50%;
+}
+
+.title>div>h1 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+}
+
+.title h1,
+.title p,
+.title ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+.plats {
+    justify-content: space-around;
+}
+
+.plat-principal img {
+    width: 100%;
+}
+
+.exemple-plat {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.exemple-plat p {
+    border-bottom: 1px solid black;
+    margin: 0;
+    text-align: right;
+    width: 100%;
+}
+
+.exemple-plat h2 {
+    margin: 10px auto;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+section>div {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+section>div>img {
+    width: 100%;
+}
+
+.marges {
+    margin: 30px;
+}
+
+.black-star {
+    background: black;
+    color: white;
+    text-transform: uppercase;
+    font-style: normal;
+    padding: 2px;
+    width: 50%;
+}
+
+#septime {
+    font-size: 30px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 50%;
+    text-align: center;
+    letter-spacing: 5px;
+    margin: 5px 0;
+}
+
+@media(max-width:1000px) {
+    body {
+        width: 100%;
+    }
+}
