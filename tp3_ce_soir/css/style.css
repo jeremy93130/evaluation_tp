@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+
+body {
+    font-family: 'Caveat Brush', cursive;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* Header  */
+
+header {
+    background: url(../img/planches.jpg);
+    display: flex;
+    justify-content: space-between;
+    height: 600px;
+    position: relative;
+}
+
+header img {
+    position: absolute;
+    width: 200px;
+    top: 25%;
+    left: 45%;
+}
+
+h1 {
+    margin: 0 50px;
+    padding: 5px;
+
+}
+
+span {
+    position: relative;
+    font-size: 22px;
+    bottom: 10px;
+    left: 2px;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+hr {
+    border: 5px solid #e53f6f;
+    width: 30px;
+}
+
+nav ul li {
+    display: inline;
+    padding: 0 15px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 23px;
+}
+
+/* fleche et triangle */
+.triangle {
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border-top: 150px solid rgba(229, 63, 111, 0.7);
+    border-left: 150px solid transparent;
+    position: absolute;
+    left: 48%;
+    bottom: 300px;
+}
+
+.triangle img {
+    width: 250px;
+}
+
+.fleche {
+    width: 40px;
+    height: 40px;
+    border-right: 0.3em solid #E53F6F;
+    border-top: 0.3em solid #E53F6F;
+    transform: rotate(125deg) skewY(20deg);
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+}
+
+
+
+
+/* Fin du header */
+
+/* sections avec images + text */
+
+section {
+    display: flex;
+}
+
+/* Nthchild des sections ( seuls les div text sont à 50% ) */
+section>div:nth-child(1) {
+    width: 50%;
+}
+
+section img {
+    width: 100%;
+    height: 100%;
+}
+
+#asperge {
+    transform: rotateY(180deg);
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Image et text savon qui ne sont pas de la même taille que les autres */
+
+#img-savon {
+    width: 100%;
+}
+
+#img-savon img {
+    width: 100%;
+}
+
+#savon {
+    display: flex;
+    align-items: center;
+}
+
+#savon img {
+    width: 200px;
+}
+
+#savon div {
+    margin: 35px;
+}
+
+.size12 {
+    font-size: 12px;
+}
+
+
+.text {
+    margin: 70px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.pink-text {
+    color: #e53f6f;
+    font-size: 25px;
+}
+
+/* Local Distillation  */
+.size14 {
+    font-size: 25px;
+    margin: 0;
+}
+
+#seedTwo {
+    width: 200px;
+}
+
+
+/* Fin Section images */
+
+/* début section vide background image oeuf */
+
+.oeuf {
+    height: 500px;
+    background-image: url(../img/oeuf.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Fin Oeuf et Début footer */
+
+footer {
+    background-image: url(../img/motif.jpg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.address-div {
+    text-align: center;
+    margin: 60px 20px;
+}
+
+.address-div h2 {
+    font-family: 'Caveat Brush';
+    margin: 0;
+    font-size: 40px;
+}
+
+.address-div p {
+    font-size: 15px;
+}
+
+/* MITRA : N'hésite pas à cliquer sur les liens des logos :D  */
+
+.icons img {
+    width: 40px;
+}
