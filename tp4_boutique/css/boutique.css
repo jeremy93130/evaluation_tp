@@ -1,0 +1,201 @@
+body {
+    width     : 70%;
+    margin    : 40px auto;
+    background: #D9D9D9;
+}
+
+.width-25 {
+    width: 25%;
+}
+
+.width-50 {
+    width: 50%;
+}
+
+.width-75 {
+    width: 75%;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.container {
+    box-shadow: 1px 1px 5px 1px darkgray;
+}
+
+.flex {
+    display: flex;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.top-header {
+    justify-content: space-between;
+    align-items    : center;
+}
+
+header {
+    height: 165px;
+    width : 100%;
+}
+
+/* Logo + H1 + p */
+
+.logo-header img {
+    width: 30px;
+}
+
+.principal-title {
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+}
+
+h1 {
+    font-size: 60px;
+    margin   : 3px;
+}
+
+.principal-title p {
+    color    : rgb(224, 36, 168);
+    margin   : 3px;
+    font-size: 20px;
+}
+
+/* Besoin d'aide? */
+
+.help {
+    margin  : 0 100px;
+    position: relative;
+}
+
+.help p:first-child {
+    font-size: 30px;
+    margin   : 10px 0;
+}
+
+.help p {
+    color: rgb(103, 220, 255);
+}
+
+.absolute {
+    position: absolute;
+    top     : 50%;
+    left    : 32%;
+    width   : 100%;
+}
+
+
+
+/* Panier */
+.panier {
+    background    : rgb(103, 220, 255);
+    width         : 25%;
+    height        : 100%;
+    text-align    : center;
+    color         : white;
+    display       : flex;
+    flex-direction: column;
+}
+
+.panier p:first-child {
+    border-bottom: 2px solid white;
+    margin-top   : 2px;
+}
+
+.panier-align {
+    display    : flex;
+    align-items: center;
+}
+
+.panier-align span {
+    margin: auto;
+}
+
+
+/* Nav */
+nav {
+    height: 100%;
+    width : 100%;
+}
+
+.liste {
+    justify-content: space-between;
+    width          : 100%;
+    background     : rgb(103, 220, 255);
+}
+
+nav ul {
+    display        : flex;
+    justify-content: space-between;
+    padding        : 0;
+}
+
+nav ul li {
+    list-style: none;
+    width     : 25%;
+    text-align: center;
+    padding   : 15px 25px;
+}
+
+li:first-child {
+    background: rgb(224, 36, 168);
+}
+
+nav ul li a {
+    color          : white;
+    text-decoration: none;
+}
+
+/* Bandeau */
+
+.azzaro img {
+    height: 100%;
+    width : 100%;
+}
+
+/* Section paiement livraison */
+.paiement {
+    background     : white;
+    justify-content: space-between;
+    height: 200px;
+}
+
+.paiement p {
+    margin-top: 0;
+}
+
+.services p {
+    font-size: 12px;
+    margin: 0;
+}
+
+.services img {
+    width: 50% ;
+    padding: 20px;
+}
+
+.cartes,
+.presentation,
+.services {
+    padding: 20px;
+}
+
+.separation {
+    height: 26px;
+}
