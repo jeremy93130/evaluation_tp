@@ -1,7 +1,11 @@
 body {
-    width     : 70%;
-    margin    : 40px auto;
+    width: 70%;
+    margin: 40px auto;
     background: #D9D9D9;
+}
+
+.bg-white {
+    background: white;
 }
 
 .width-25 {
@@ -24,11 +28,15 @@ body {
     flex-wrap: wrap;
 }
 
-.align-items-center{
+.align-items-center {
     align-items: center;
 }
 
-.justify-between{
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-between {
     justify-content: space-between;
 }
 
@@ -40,18 +48,26 @@ body {
     display: flex;
 }
 
-.text-center{
+.text-center {
     text-align: center;
 }
 
+/* Header */
+
 .top-header {
     justify-content: space-between;
-    align-items    : center;
+    align-items: center;
 }
 
 header {
     height: 165px;
-    width : 100%;
+    width: 100%;
+}
+
+/* Bandeau */
+
+.azzaro div {
+    height: 450px;
 }
 
 /* Logo + H1 + p */
@@ -61,32 +77,32 @@ header {
 }
 
 .principal-title {
-    display       : flex;
+    display: flex;
     flex-direction: column;
-    align-items   : center;
+    align-items: center;
 }
 
 h1 {
     font-size: 60px;
-    margin   : 3px;
+    margin: 3px;
 }
 
 .principal-title p {
-    color    : rgb(224, 36, 168);
-    margin   : 3px;
+    color: rgb(224, 36, 168);
+    margin: 3px;
     font-size: 20px;
 }
 
 /* Besoin d'aide? */
 
 .help {
-    margin  : 0 100px;
+    margin: 0 100px;
     position: relative;
 }
 
 .help p:first-child {
     font-size: 30px;
-    margin   : 10px 0;
+    margin: 10px 0;
 }
 
 .help p {
@@ -95,31 +111,30 @@ h1 {
 
 .absolute {
     position: absolute;
-    top     : 50%;
-    left    : 32%;
-    width   : 100%;
+    top: 50%;
+    left: 32%;
+    width: 100%;
 }
 
 
 
 /* Panier */
 .panier {
-    background    : rgb(103, 220, 255);
-    width         : 25%;
-    height        : 100%;
-    text-align    : center;
-    color         : white;
-    display       : flex;
+    background: rgb(103, 220, 255);
+    width: 25%;
+    text-align: center;
+    color: white;
+    display: flex;
     flex-direction: column;
 }
 
 .panier p:first-child {
     border-bottom: 2px solid white;
-    margin-top   : 2px;
+    margin-top: 2px;
 }
 
 .panier-align {
-    display    : flex;
+    display: flex;
     align-items: center;
 }
 
@@ -131,34 +146,34 @@ h1 {
 /* Nav */
 nav {
     height: 100%;
-    width : 100%;
+    width: 100%;
 }
 
 .liste {
     justify-content: space-between;
-    width          : 100%;
-    background     : rgb(103, 220, 255);
+    width: 100%;
+    background: rgb(103, 220, 255);
 }
 
 nav ul {
-    display        : flex;
+    display: flex;
     justify-content: space-between;
-    padding        : 0;
+    padding: 0;
 }
 
 nav ul li {
     list-style: none;
-    width     : 25%;
+    width: 25%;
     text-align: center;
-    padding   : 15px 25px;
+    padding: 15px 25px;
 }
 
-li:first-child {
+.liste li:first-child {
     background: rgb(224, 36, 168);
 }
 
 nav ul li a {
-    color          : white;
+    color: white;
     text-decoration: none;
 }
 
@@ -166,12 +181,12 @@ nav ul li a {
 
 .azzaro img {
     height: 100%;
-    width : 100%;
+    width: 100%;
 }
 
 /* Section paiement livraison */
 .paiement {
-    background     : white;
+    background: white;
     justify-content: space-between;
     height: 200px;
 }
@@ -180,15 +195,30 @@ nav ul li a {
     margin-top: 0;
 }
 
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 25%;
+    margin: auto;
+}
+
 .services p {
-    font-size: 12px;
-    margin: 0;
+    text-align: center;
+    font-size: 14px;
+    margin: 0 15px;
 }
 
 .services img {
-    width: 50% ;
-    padding: 20px;
+    width: 30px;
+    margin: 10px 0;
 }
+
+.margin-left-img {
+    margin-left: 10px;
+}
+
+
 
 .cartes,
 .presentation,
@@ -198,4 +228,65 @@ nav ul li a {
 
 .separation {
     height: 26px;
+}
+
+
+/* Cards */
+.section-cards {
+    background-color: white;
+}
+
+.background-section {
+    background: #d9d9d9;
+    width: 100%;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    box-shadow: 1px 3px 3px 3px grey;
+    border-radius: 10px;
+}
+
+.cards img {
+    width: 70px;
+    height: 70px;
+}
+
+.cards p {
+    text-align: center;
+}
+
+.cards-center {
+    justify-content: center;
+}
+
+.robe-div,
+.chemise-div,
+.talons-div {
+    height: 100px;
+}
+
+.robe-div img {
+    height: 100%;
+}
+
+/* Footer */
+
+.ul-bottom {
+    background: #67dcff;
+    padding: 0 60px;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+}
+
+.ul-bottom a {
+    font-weight: bold;
+    font-size: 13px;
 }
