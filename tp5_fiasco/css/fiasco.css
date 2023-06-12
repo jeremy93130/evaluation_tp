@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+body {
+    background: black;
+    width: 1440px;
+    color: white;
+    margin: auto;
+}
+
+.reversed {
+    flex-direction: row-reverse;
+}
+
+/* Header + div titleNav (h2 + nav) et welcome (tout le milieu du header div qui contient p h1 p*/
+
+header {
+    background: url("../img/eggs.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    text-transform: uppercase;
+    opacity: 0.8;
+    font-family: sans-serif;
+}
+
+.titleNav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+.titleNav li {
+    display: inline;
+    padding: 10px 30px;
+}
+
+.titleNav li:last-child {
+    border: 1px solid orange;
+}
+
+/* Div welcome */
+
+.welcome {
+    text-align: center;
+    font-size: 30px;
+}
+
+.welcome p,
+.welcome h2,
+.welcome h1 {
+    margin: 100px 0;
+}
+
+h2 {
+    font-family: 'Dancing Script', cursive;
+    color: rgb(206, 161, 35);
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+/* Section main */
+main {
+    width: 60%;
+    margin: auto;
+}
+
+main section {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+section div p:last-child {
+    color: rgb(206, 161, 35);
+}
+
+.mealsPics {
+    border: 1px solid orange;
+    /* width: 100%; */
+}
+
+.mealsPics img {
+    height: 100%;
+}
+
+.marged-left {
+    margin: 100px 0 0 50px;
+    text-align: justify;
+    align-items: center;
+}
+
+.marged-right {
+    margin: 100px 50px 0 0;
+}
+
+.marged p:last-child {
+    color: rgb(206, 161, 35);
+}

@@ -1,7 +1,7 @@
 body {
     width: 70%;
     margin: 40px auto;
-    background: #D9D9D9;
+    background: rgb(217, 217, 217);
 }
 
 .bg-white {
@@ -42,6 +42,7 @@ body {
 
 .container {
     box-shadow: 1px 1px 5px 1px darkgray;
+    background: white;
 }
 
 .flex {
@@ -62,6 +63,8 @@ body {
 header {
     height: 165px;
     width: 100%;
+    background: #D9D9D9;
+
 }
 
 /* Bandeau */
@@ -234,6 +237,7 @@ nav ul li a {
 /* Cards */
 .section-cards {
     background-color: white;
+    margin-bottom: 40px;
 }
 
 .background-section {
@@ -277,10 +281,9 @@ nav ul li a {
 }
 
 /* Footer */
-
 .ul-bottom {
     background: #67dcff;
-    padding: 0 60px;
+    padding: 0 100px;
     display: flex;
     align-items: center;
     margin-top: 0;
