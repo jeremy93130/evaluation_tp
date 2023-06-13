@@ -283,13 +283,16 @@ nav ul li a {
 /* Footer */
 .ul-bottom {
     background: #67dcff;
-    padding: 0 100px;
+    padding: 0 150px;
     display: flex;
     align-items: center;
     margin-top: 0;
 }
 
+.ul-bottom li {
+    width: auto;
+}
 .ul-bottom a {
     font-weight: bold;
-    font-size: 13px;
+    font-size: 11px;
 }
