@@ -38,6 +38,11 @@ header {
     border: 1px solid orange;
 }
 
+.titleNav a {
+    text-decoration: none;
+    color: white;
+}
+
 /* Div welcome */
 
 .welcome {
