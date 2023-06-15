@@ -196,6 +196,7 @@ nav ul li a {
 
 .paiement p {
     margin-top: 0;
+    height: auto;
 }
 
 .services {
@@ -227,6 +228,7 @@ nav ul li a {
 .presentation,
 .services {
     padding: 20px;
+    height: 100%;
 }
 
 .separation {
@@ -283,13 +285,71 @@ nav ul li a {
 /* Footer */
 .ul-bottom {
     background: #67dcff;
-    padding: 0 100px;
+    padding: 0 150px;
     display: flex;
     align-items: center;
     margin-top: 0;
 }
 
+.ul-bottom li {
+    width: auto;
+}
+
 .ul-bottom a {
     font-weight: bold;
-    font-size: 13px;
+    font-size: 11px;
+}
+
+
+@media (max-width : 1400px) {
+    body {
+        width: 100%;
+    }
+
+    /* Header */
+    header {
+        height: auto;
+    }
+
+    h1,
+    p,
+    .principal-title p {
+        font-size: 15px;
+    }
+
+    /* Class Help besoin d'aide? */
+    .help p:first-child {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .help div>p:last-child {
+        top: 40%;
+    }
+
+
+    /* nav */
+    nav {
+        flex-wrap: wrap;
+    }
+
+    nav ul {
+        margin-bottom: 0;
+    }
+
+    nav ul li {
+        padding: 15px 5px;
+    }
+
+    /* Section cartes paiement retour etc */
+    .cartes p {
+        margin: 30px 0;
+    }
+}
+
+@media (max-width : 670px) {
+
+    .flex{
+        display: block;
+    }
 }
