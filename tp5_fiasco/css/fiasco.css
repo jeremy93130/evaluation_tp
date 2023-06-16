@@ -296,13 +296,14 @@ footer {
     justify-content: space-around;
     width: 100%;
     background: url("../img/splash.png");
+    background-color: rgb(59, 59, 59);
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: bottom 50px right 0;
 }
 
 footer div {
     width: 25%;
-    margin: 150px auto;
+    margin: 100px auto;
 }
 
 footer div:last-child {
