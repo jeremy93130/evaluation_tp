@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 
-
 body {
+    background-color: black;
+    margin: 0;
+}
+
+.container {
     background: black;
     width: 1440px;
     color: white;
     margin: auto;
 }
 
-a{
+a {
     text-decoration: none;
     color: rgb(241, 148, 18);
 }
@@ -36,6 +40,7 @@ header {
 .titleNav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 20px 50px;
 }
 
@@ -88,10 +93,25 @@ section div p:last-child {
     color: rgb(206, 161, 35);
 }
 
+section#restaurant {
+    margin-top: 50px;
+}
+
+section#aPropos .mealsPics {
+    padding: 40px 0 0 50px;
+    margin-top: -23px;
+}
+
+section#restaurant .mealsPics {
+    padding: 40px 50px 0 0;
+
+}
+
 .mealsPics {
     border: 1px solid orange;
     /* width: 100%; */
 }
+
 
 .mealsPics img {
     height: 100%;
@@ -285,7 +305,7 @@ section#recipes>div:last-child {
 
 section#maps {
     margin-top: 100px;
-    width: 100%;
+    width: 90%;
 }
 
 
@@ -302,8 +322,8 @@ footer {
 }
 
 footer div {
-    width: 25%;
-    margin: 100px auto;
+    flex-basis: 400px;
+    margin: 100px 50px;
 }
 
 footer div:last-child {
@@ -322,4 +342,10 @@ footer div p {
 footer .p-marged {
     width: 75%;
     margin: 50px 0;
+}
+
+@media(max-width: 1440px){
+    .container, section, iframe,footer,ul{
+        width: 100%;
+    }
 }
