@@ -1,11 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 
-
 body {
+    background-color: black;
+    margin: 0;
+}
+
+.container {
     background: black;
-    width     : 1440px;
-    color     : white;
-    margin    : auto;
+    width: 1440px;
+    color: white;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(241, 148, 18);
 }
 
 .reversed {
@@ -19,19 +28,20 @@ body {
 /* Header + div titleNav (h2 + nav) et welcome (tout le milieu du header div qui contient p h1 p*/
 
 header {
-    background       : url("../img/eggs.jpg");
+    background: url("../img/eggs.jpg");
     background-repeat: no-repeat;
-    background-size  : cover;
-    height           : 700px;
-    text-transform   : uppercase;
-    opacity          : 0.8;
-    font-family      : sans-serif;
+    background-size: cover;
+    height: 700px;
+    text-transform: uppercase;
+    opacity: 0.8;
+    font-family: sans-serif;
 }
 
 .titleNav {
-    display        : flex;
+    display: flex;
     justify-content: space-between;
-    padding        : 20px 50px;
+    align-items: center;
+    padding: 20px 50px;
 }
 
 .titleNav li {
@@ -45,14 +55,14 @@ header {
 
 .titleNav a {
     text-decoration: none;
-    color          : white;
+    color: white;
 }
 
 /* Div welcome */
 
 .welcome {
     text-align: center;
-    font-size : 30px;
+    font-size: 30px;
 }
 
 .welcome p,
@@ -62,20 +72,20 @@ header {
 }
 
 h2 {
-    font-family  : 'Dancing Script', cursive;
-    color        : rgb(206, 161, 35);
+    font-family: 'Dancing Script', cursive;
+    color: rgb(206, 161, 35);
     margin-bottom: 0;
-    font-weight  : bold;
-    font-size    : 35px;
+    font-weight: bold;
+    font-size: 35px;
 }
 
 /* Section main */
 
 main section {
-    display        : flex;
+    display: flex;
     justify-content: center;
-    width          : 60%;
-    margin         : auto;
+    width: 60%;
+    margin: auto;
     /* align-items : center; */
 }
 
@@ -83,18 +93,33 @@ section div p:last-child {
     color: rgb(206, 161, 35);
 }
 
+section#restaurant {
+    margin-top: 50px;
+}
+
+section#aPropos .mealsPics {
+    padding: 40px 0 0 50px;
+    margin-top: -23px;
+}
+
+section#restaurant .mealsPics {
+    padding: 40px 50px 0 0;
+
+}
+
 .mealsPics {
-    border  : 1px solid orange;
+    border: 1px solid orange;
     /* width: 100%; */
 }
+
 
 .mealsPics img {
     height: 100%;
 }
 
 .marged-left {
-    margin     : 100px 0 0 50px;
-    text-align : justify;
+    margin: 100px 0 0 50px;
+    text-align: justify;
     align-items: center;
 }
 
@@ -108,25 +133,25 @@ section div p:last-child {
 
 /* Section Menu */
 section#menu {
-    display   : block;
+    display: block;
     text-align: center;
 }
 
 section#menu p {
-    width : 75%;
+    width: 75%;
     margin: 50px auto;
 }
 
 #menu ul li {
     display: inline;
     padding: 30px;
-    margin : 20px;
+    margin: 20px;
 }
 
 #menu ul li a {
-    font-size      : 25px;
+    font-size: 25px;
     text-decoration: none;
-    color          : rgb(183, 182, 182);
+    color: rgb(183, 182, 182);
 }
 
 /* Section plats */
@@ -134,7 +159,7 @@ section#plats h2,
 section#plats h3,
 section#plats p {
     font-size: 16px;
-    margin   : 20px 0;
+    margin: 20px 0;
 }
 
 section#plats h2,
@@ -144,19 +169,19 @@ section#plats h3 {
 
 section#plats {
     margin-top: 50px;
-    width     : 70%;
+    width: 70%;
 }
 
 section#plats>div {
-    display  : flex;
+    display: flex;
     flex-wrap: wrap;
 }
 
 section#plats>div>div {
-    display    : flex;
-    width      : 50%;
+    display: flex;
+    width: 50%;
     align-items: center;
-    margin     : 20px 0;
+    margin: 20px 0;
 }
 
 section#plats>div>div>div:last-child {
@@ -169,15 +194,15 @@ section#chef {
 }
 
 section#chef>div:first-child {
-    width : 50%;
-    margin: auto;
+    width: 50%;
+    margin: 40px auto;
 }
 
 section#chef h2,
 section#chef h3,
 section#chef p {
-    font-size: 16px;
-    margin   : 20px 0;
+    font-size: 12px;
+    margin: 20px 0;
 }
 
 section#chef h2,
@@ -186,40 +211,40 @@ section#chef h3 {
 }
 
 section#chef img {
-    width: 300px;
+    width: 400px;
 }
 
 /* Section RESERVATION */
 
 section#reservation {
-    display         : flex;
-    flex-direction  : column;
-    justify-content : center;
-    align-items     : center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-image: url(../img/reservation.jpg);
-    width           : 100%;
-    height          : 500px;
-    filter          : brightness(80%);
+    width: 100%;
+    height: 500px;
+    filter: brightness(80%);
 }
 
 section#reservation>div {
     text-align: center;
-    margin    : auto;
+    margin: auto;
 }
 
 section#reservation>div>p {
     text-align: center;
-    margin    : auto;
-    width     : 80%;
+    margin: auto;
+    width: 80%;
 }
 
 section#reservation input,
 section#reservation select {
-    padding      : 10px 10px;
-    text-align   : center;
-    border       : 1px solid darkgray;
-    background   : transparent;
-    color        : rgb(201, 199, 199);
+    padding: 10px 10px;
+    text-align: center;
+    border: 1px solid darkgray;
+    background: transparent;
+    color: rgb(201, 199, 199);
     border-radius: 10px;
 }
 
@@ -230,13 +255,13 @@ section#reservation input::placeholder {
 section#reservation h2,
 section#reservation h3,
 section#reservation p {
-    margin   : 20px 0;
+    margin: 20px 0;
     font-size: 30px;
 }
 
 section#reservation p {
     font-size: 16px;
-    width    : 50%;
+    width: 50%;
 }
 
 section#reservation form,
@@ -245,10 +270,82 @@ section#reservation button {
 }
 
 section#reservation button {
-    padding         : 10px 30px;
-    border-radius   : 10px;
-    color           : white;
+    padding: 10px 30px;
+    border-radius: 10px;
+    color: white;
     background-color: rgb(241, 148, 18);
-    font-size       : 16px;
-    font-weight     : bold;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/* SECTION RECIPES */
+section#recipes {
+    text-align: right;
+    display: block;
+}
+
+section#recipes span {
+    position: absolute;
+    left: -20px;
+    text-align: center;
+    bottom: 10px;
+    font-weight: bold;
+}
+
+section#recipes p {
+    position: relative;
+}
+
+section#recipes>div:last-child {
+    margin-top: 100px;
+}
+
+/* Section MAPS */
+
+section#maps {
+    margin-top: 100px;
+    width: 90%;
+}
+
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background: url("../img/splash.png");
+    background-color: rgb(59, 59, 59);
+    background-repeat: no-repeat;
+    background-position: bottom 50px right 0;
+}
+
+footer div {
+    flex-basis: 400px;
+    margin: 100px 50px;
+}
+
+footer div:last-child {
+    text-align: center;
+}
+
+footer div h2 {
+    margin: 70px 0;
+}
+
+footer div p {
+
+    margin: 0 auto;
+}
+
+footer .p-marged {
+    width: 75%;
+    margin: 50px 0;
+}
+
+@media(max-width: 1440px){
+    .container, section, iframe,footer,ul{
+        width: 100%;
+    }
 }
