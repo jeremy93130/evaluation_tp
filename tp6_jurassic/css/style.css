@@ -1,0 +1,172 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin        : 0;
+    padding       : 0;
+    border        : 0;
+    vertical-align: baseline;
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+
+/* ********************************* HEADER ***************** */
+header {
+    height             : 700px;
+    background-image   : url("../img/dinosaure.jpg");
+    background-position: center;
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    position           : relative;
+}
+
+
+/* NAV */
+
+header nav {
+    background-color: rgba(0, 0, 0, 0.433);
+    position: sticky;
+    top: 0;
+}
+
+header nav ul {
+    display        : flex;
+    color          : white;
+    justify-content: center;
+    align-items    : center;
+    height         : 50px;
+    list-style-type: none;
+}
+
+header nav ul li {
+    padding: 0 35px;
+}
+
+header nav ul li span {
+    color: darkgray;
+}
+
+header nav ul .blue_back {
+    background-color: #1C5F81;
+    padding         : 4px 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color          : white;
+    font-family    : sans-serif;
+}
+header nav ul li:hover{
+   background: #1C5F81;
+   padding: 10px;
+}
+
+header nav ul li .active {
+    padding: 0 5px;
+}
+
+/* HEADER DIV IMG */
+
+header .jurrasic_world {
+    width : 500px;
+    height: 600px;
+    margin: auto;
+}
+
+.jurrasic_world img {
+    width : 100%;
+    height: 100%;
+}
+
+header .climatiseur {
+    position: absolute;
+    bottom  : 0;
+    right   : 0;
+    width   : 300px;
+}
+
+header .climatiseur img {
+    width         : 100%;
+    vertical-align: bottom;
+}
