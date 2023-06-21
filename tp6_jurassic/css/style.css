@@ -90,6 +90,17 @@ video {
 
 }
 
+.gras {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.container {
+    position: relative;
+}
 
 /* ********************************* HEADER ***************** */
 header {
@@ -99,18 +110,20 @@ header {
     background-repeat  : no-repeat;
     background-size    : cover;
     position           : relative;
+    margin-bottom      : 60px;
 }
 
 
 /* NAV */
 
-header nav {
+nav {
     background-color: rgba(0, 0, 0, 0.433);
-    position: sticky;
-    top: 0;
+    position        : fixed;
+    width           : 100%;
+    z-index         : 1;
 }
 
-header nav ul {
+nav ul {
     display        : flex;
     color          : white;
     justify-content: center;
@@ -119,30 +132,31 @@ header nav ul {
     list-style-type: none;
 }
 
-header nav ul li {
+nav ul li {
     padding: 0 35px;
 }
 
-header nav ul li span {
+nav ul li span {
     color: darkgray;
 }
 
-header nav ul .blue_back {
+nav ul .blue_back {
     background-color: #1C5F81;
     padding         : 4px 20px;
 }
 
-header nav ul li a {
+nav ul li a {
     text-decoration: none;
     color          : white;
     font-family    : sans-serif;
 }
-header nav ul li:hover{
-   background: #1C5F81;
-   padding: 10px;
+
+nav ul li:hover {
+    background: #1C5F81;
+    padding   : 10px;
 }
 
-header nav ul li .active {
+nav ul li .active {
     padding: 0 5px;
 }
 
@@ -152,6 +166,7 @@ header .jurrasic_world {
     width : 500px;
     height: 600px;
     margin: auto;
+    padding-top: 100px;
 }
 
 .jurrasic_world img {
@@ -169,4 +184,61 @@ header .climatiseur {
 header .climatiseur img {
     width         : 100%;
     vertical-align: bottom;
+}
+
+/* Section */
+
+section {
+    width : 600px;
+    margin: auto;
+}
+
+section#section1 .section-img img {
+    width: 100%;
+}
+
+section#section1 h3 {
+    text-align    : center;
+    font-size     : 40px;
+    margin        : 30px 0;
+    color         : #292929;
+    font-family   : sans-serif;
+    text-transform: uppercase;
+}
+
+section#section1 p {
+    text-align : justify;
+    margin     : 20px 0;
+    font-family: sans-serif;
+    font-size  : 13px;
+}
+
+/* Section 2 */
+
+#section2 {
+    text-align : center;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#section2 div {
+    margin: 40px 0;
+}
+
+#section2 div p:nth-child(4) {
+    margin: 0 0 20px 0;
+}
+
+#section2 div p span:nth-child(1) {
+    font-size: 17px;
+}
+
+#section2 button {
+    padding         : 10px 30px;
+    margin          : 20px 0;
+    background-color: #1C5F81;
+    color           : white;
+    border          : none;
+    text-transform  : uppercase;
+    font-size       : 11px;
 }
