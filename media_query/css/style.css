@@ -1,3 +1,4 @@
+
 .container {
     width: 1440px;
     margin: auto;
@@ -23,13 +24,13 @@ section.flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    height: 1200px;
+    /* height: 950px; */
 }
 
 section.flex div,figure {
     width: 300px;
     height: 300px;
-    margin: 50px 20px;
+    margin: 80px 20px;
     border: 2px solid black;
 }
 
@@ -95,6 +96,10 @@ figcaption{
 .promos {
     position: relative;
 }
+
+.font-grey {
+    color: lightgrey;
+}
 i{
     position: absolute;
     font-size: 40px;
@@ -103,9 +108,17 @@ i{
     color: black;
 }
 
-@media(max-width: 1470px) {
+#vente-gateau{
+    border: none;
+    margin: 0;
+}
+
+@media(max-width: 1399px) {
     .container {
         width: 100%;
+    }
+    header {
+        background-image: url(../img/chat-noir-135126.jpg);
     }
 }
 
@@ -141,3 +154,5 @@ i{
         height: 400px;
     }
 }
+
+/*  */
