@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 html,
 body,
 div,
@@ -79,15 +81,19 @@ time,
 mark,
 audio,
 video {
-    margin        : 0;
-    padding       : 0;
-    border        : 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
     vertical-align: baseline;
 }
 
 * {
     box-sizing: border-box;
 
+}
+
+body{
+    font-family: "Montserrat";
 }
 
 .gras {
@@ -104,92 +110,103 @@ video {
 
 /* ********************************* HEADER ***************** */
 header {
-    height             : 700px;
-    background-image   : url("../img/dinosaure.jpg");
+    height: 950px;
+    background-image: url("../img/dinosaure.jpg");
     background-position: center;
-    background-repeat  : no-repeat;
-    background-size    : cover;
-    position           : relative;
-    margin-bottom      : 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 60px;
+    filter: brightness(90%);
 }
 
 
 /* NAV */
 
-nav {
+header nav {
     background-color: rgba(0, 0, 0, 0.433);
-    position        : fixed;
-    width           : 100%;
-    z-index         : 1;
+    position: fixed;
+    width: 100%;
+    /* z-index: 1; */
 }
 
-nav ul {
-    display        : flex;
-    color          : white;
+header nav ul {
+    display: flex;
+    color: white;
     justify-content: center;
-    align-items    : center;
-    height         : 50px;
+    align-items: center;
+    height: 50px;
     list-style-type: none;
 }
 
-nav ul li {
+header nav ul li {
     padding: 0 35px;
+    transition: 1.5s;
 }
 
-nav ul li span {
+header nav ul li:hover {
+    background: #1C5F81;
+    padding: 20px 35px;
+    transition: 0.5s;
+}
+
+header nav ul li span {
     color: darkgray;
 }
 
-nav ul .blue_back {
+
+header nav ul .blue_back {
     background-color: #1C5F81;
-    padding         : 4px 20px;
+    padding: 4px 20px;
 }
 
-nav ul li a {
+header nav ul li a {
     text-decoration: none;
-    color          : white;
-    font-family    : sans-serif;
+    color: white;
+    font-family: sans-serif;
+    text-transform: uppercase;
 }
 
-nav ul li:hover {
-    background: #1C5F81;
-    padding   : 10px;
-}
 
-nav ul li .active {
+
+header nav ul li .active {
     padding: 0 5px;
 }
 
 /* HEADER DIV IMG */
 
 header .jurrasic_world {
-    width : 500px;
-    height: 600px;
-    margin: auto;
-    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    height: 950px;
+    align-items: center;
+}
+
+header .jurrasic_world>div {
+    height: 700px;
 }
 
 .jurrasic_world img {
-    width : 100%;
+    width: 100%;
     height: 100%;
 }
 
 header .climatiseur {
     position: absolute;
-    bottom  : 0;
-    right   : 0;
-    width   : 300px;
+    bottom: 0;
+    right: 0;
+    width: 300px;
 }
 
 header .climatiseur img {
-    width         : 100%;
+    width: 100%;
     vertical-align: bottom;
 }
 
 /* Section */
 
 section {
-    width : 600px;
+    width: 600px;
     margin: auto;
 }
 
@@ -198,25 +215,25 @@ section#section1 .section-img img {
 }
 
 section#section1 h3 {
-    text-align    : center;
-    font-size     : 40px;
-    margin        : 30px 0;
-    color         : #292929;
-    font-family   : sans-serif;
+    text-align: center;
+    font-size: 40px;
+    margin: 30px 0;
+    color: #292929;
+    font-family: sans-serif;
     text-transform: uppercase;
 }
 
 section#section1 p {
-    text-align : justify;
-    margin     : 20px 0;
+    text-align: justify;
+    margin: 20px 0;
     font-family: sans-serif;
-    font-size  : 13px;
+    font-size: 13px;
 }
 
 /* Section 2 */
 
 #section2 {
-    text-align : center;
+    text-align: center;
     font-family: sans-serif;
     font-weight: bold;
 }
@@ -234,11 +251,127 @@ section#section1 p {
 }
 
 #section2 button {
-    padding         : 10px 30px;
-    margin          : 20px 0;
+    padding: 10px 30px;
+    margin: 20px 0;
     background-color: #1C5F81;
-    color           : white;
-    border          : none;
-    text-transform  : uppercase;
-    font-size       : 11px;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    font-size: 11px;
 }
+
+/* Section 3 tarifs horaires maps et trajet */
+
+section#section3 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+section#section3 div {
+    width: 600px;
+    margin: 30px 30px 0 30px;
+}
+
+section#section3 div:last-child {
+    margin: 0 30px;
+}
+
+section#section3 i {
+    padding-right: 10px;
+}
+
+section#section3 h3 {
+    margin: 20px auto;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+section#section3 p {
+    font-size: 14px;
+}
+
+section#section3 div:first-child p:nth-child(6) {
+    margin: 20px 0;
+    width: 400px;
+    font-size: 14px;
+}
+
+section#section3 div:first-child button {
+    padding: 10px 30px;
+    background-color: #1C5F81;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+section#section3 div img {
+    width: 40px;
+    vertical-align: middle;
+}
+
+section#section3 div:nth-child(2) p:nth-child(4) {
+    margin-bottom: 30px;
+
+}
+
+section#section3 div:nth-child(3) {
+    border-top: 2px solid rgb(236, 236, 236);
+}
+
+/* Section 4 */
+section#section4 {
+    margin: 100px auto;
+    width: 800px;
+}
+
+section#section4 h4 {
+    text-align: center;
+    font-size: 40px;
+    font-family: sans-serif;
+    margin: 40px auto;
+    text-transform: uppercase;
+}
+
+section#section4 .tv {
+    display: flex;
+    justify-content: space-around;
+}
+
+section#section4>div>div {
+    width: 70px;
+}
+
+section#section4 div img {
+    width: 100%;
+}
+
+/* Footer */
+
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 450px;
+}
+
+footer div:first-child {
+    padding-top: 50px;
+}
+
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+    cursor: grab;
+}
+
+
+
+
+
+@media(max-width:1500px) {}
