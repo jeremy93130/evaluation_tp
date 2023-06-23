@@ -145,6 +145,10 @@ header nav ul {
     list-style-type: none;
 }
 
+header nav li.deroulant ul.mobile {
+    display: none;
+}
+
 header nav ul li {
     padding: 0 35px;
     transition: 1.5s;
@@ -415,9 +419,10 @@ footer nav ul li a {
     section#section3 div:last-child {
         margin-top: 40px;
     }
-        section#section3 div:first-child p:nth-child(6){
-            margin: auto;
-        }
+
+    section#section3 div:first-child p:nth-child(6) {
+        margin: auto;
+    }
 }
 
 @media(max-width:1070px) {
@@ -432,10 +437,6 @@ footer nav ul li a {
 }
 
 @media(max-width: 900px) {
-    header nav ul li {
-        padding: 2px 20px;
-    }
-
     header {
         height: 400px;
     }
@@ -456,28 +457,89 @@ footer nav ul li a {
 
 }
 
+@media(max-width:960px) {
+    header nav:hover {
+        height: 150px;
+    }
+
+    header nav ul>li:not(.deroulant) {
+        display: none;
+    }
+
+    header nav ul>li.deroulant:hover,
+    header nav ul>li.deroulant:hover>ul,
+    header nav ul>li.deroulant:hover>ul>li {
+        display: block;
+        padding: 0;
+        background-color: transparent;
+    }
+
+    header nav ul>li.deroulant:hover>ul,
+    header nav ul>li.deroulant:hover>ul>li {
+        height: 100%;
+    }
+
+    header nav ul>li.deroulant:hover {
+        padding-top: 50px;
+    }
+
+    header nav ul>li.deroulant:hover:first-child{
+        margin-top: 50px;
+    }
+
+    header nav ul>li.deroulant:hover>a {
+        color: white;
+        padding: 0;
+    }
+
+    header nav ul>li.deroulant:hover>ul>li>a {
+        font-size: 13px;
+        padding: 0;
+        color: white;
+    }
+
+    footer {
+        display: block;
+    }
+
+    footer div {
+        text-align: center;
+    }
+
+
+    footer div:last-child{
+        width: 200px;
+        margin: 60px auto 0 auto;
+    }
+    footer div:last-child>img{
+        width: 100%;
+    }
+}
+
 @media(max-width: 640px) {
     main>section {
         width: 100%;
     }
-    
+
     main>section#section1>p {
         width: 500px;
         margin: 20px auto;
     }
-    
+
     main>section#section4 {
         width: 100%;
     }
+
     header nav ul li:hover a {
         color: #1C5F81;
         padding: 15px 20px;
         transition: 0.5s;
     }
-        header nav ul li:hover {
-            background: white;
-            padding: 15px 20px;
-            transition: 0.5s;
-            border-top: 2px solid green;
-        }
+
+    header nav ul li:hover {
+        background: white;
+        padding: 15px 20px;
+        transition: 0.5s;
+        border-top: 2px solid green;
+    }
 }
